@@ -1,0 +1,1 @@
+Welcome to my formatted CV. This formatting was originally passed on to me by Sarah Mayes-Tang. I have since made some alterations. If you like my CV and would like to use a similar format, download cv.tex and res.cls (put them in the same directory) and get formatting. 

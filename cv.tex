@@ -1,0 +1,362 @@
+\documentclass[margin,line]{res}
+
+%%%%%%%%%%%%%% SETTINGS
+\usepackage[hidelinks]{hyperref}
+\pagenumbering{arabic}
+\oddsidemargin -.4in
+\evensidemargin -.1in
+\textwidth = 6.0in
+\itemsep = 0in
+\parsep = 0in
+
+%%%%%%%%%%%%%% CUSTOM LISTS 
+\newenvironment{basiclist}{
+  \begin{list}{}{
+      \setlength{\itemsep}{0.06in}
+      \setlength{\parsep}{0in} 
+      \setlength{\parskip}{0in}
+      \setlength{\topsep}{0in} 
+      \setlength{\partopsep}{0in} 
+      \setlength{\rightmargin}{0in}
+      \setlength{\leftmargin}{0in}
+      }}{\end{list}
+  }
+  
+\newenvironment{list-talks}{
+  \begin{list}{}{
+      \setlength{\itemsep}{0.1in}
+      \setlength{\parsep}{0in} 
+      \setlength{\parskip}{0in}
+      \setlength{\topsep}{0in} 
+      \setlength{\partopsep}{0in} 
+      \setlength{\rightmargin}{0in}
+      \setlength{\leftmargin}{0in}
+      }}{\end{list}
+  }
+
+\newenvironment{list-papers}{
+  \begin{list}{}{
+      \setlength{\itemsep}{0.15in}
+      \setlength{\parsep}{0in} 
+      \setlength{\parskip}{0in}
+      \setlength{\topsep}{0in} 
+      \setlength{\partopsep}{0in} 
+      \setlength{\leftmargin}{0in}
+       }}{\end{list}}
+
+\newenvironment{bullet-italic-right-stop}{
+  \begin{list}{$\bullet$}{
+      \setlength{\itemsep}{0.02in}
+      \setlength{\parsep}{0in} 
+      \setlength{\parskip}{0in}
+      \setlength{\topsep}{0in} 
+      \setlength{\partopsep}{0.025in} 
+      \setlength{\rightmargin}{0.89in}
+      \setlength{\leftmargin}{0.3in}
+      \itshape
+      }}{\end{list}
+      \vspace*{-0.05in}
+  }
+      
+\newenvironment{bullet-italic-no-right-stop}{
+  \begin{list}{$\bullet$}{
+      \setlength{\itemsep}{0.02in}
+      \setlength{\parsep}{0in} 
+      \setlength{\parskip}{0in}
+      \setlength{\topsep}{0in} 
+      \setlength{\partopsep}{0.025in} 
+      \setlength{\rightmargin}{0in}
+      \setlength{\leftmargin}{0.3in}
+      \itshape
+      }}{\end{list}
+  }
+  
+\newenvironment{indent-no-right-stop}{
+  \begin{list}{}{
+      \setlength{\itemsep}{0.02in}
+      \setlength{\parsep}{0in} 
+      \setlength{\parskip}{0in}
+      \setlength{\topsep}{0in} 
+      \setlength{\partopsep}{0.025in} 
+      \setlength{\rightmargin}{0in}
+      \setlength{\leftmargin}{0.3in}
+      }}{\end{list}
+  }
+
+
+%%%%%%%%%%%%%% MAIN DOCUMENT
+\begin{document}
+
+%%%%%%%%%%%%%% FIRST PAGE HEADER
+\name{\Large Firstname Lastname\vspace*{.1in}}
+
+%%%%%%%%%%%%%% CONTACT INFO
+\begin{minipage}{0.7\paperwidth}
+\begin{flushright}
+\begin{tabular}{ll}
+E-mail:  thisismyemail%\\
+%Phone: thisismyphone
+\end{tabular}
+\end{flushright}
+% adjust position of contact information vertically
+\vspace*{-0.5in}
+\end{minipage}
+
+
+%%%%%%%%%%%%% BEGIN RESUME
+\begin{resume}
+
+
+%%%%%%%%%%%%% EDUCATION
+\section{\sc Education}
+
+\begin{basiclist}
+
+\item {\bf  Ph.D. in Mathematics} (2021 -- Present) 
+
+\begin{indent-no-right-stop}
+\item Some University, Location of University. 
+\item Advisors: Dr. A. Abc
+\end{indent-no-right-stop}
+
+\item {\bf  M.Sc. in Mathematics} (2019 -- 2021)
+
+\begin{indent-no-right-stop}
+\item Some University, Location of University. 
+\item Advisors: Dr. A. Abc 
+\item Thesis: \textit{A thesis title} 
+\end{indent-no-right-stop}
+
+\item {\bf  B.Sc. in Mathematics} (2018)
+
+\begin{indent-no-right-stop}
+\item Some University, Location of University. 
+\item Advisors: Dr. A. Abc 
+\item Thesis: \textit{A thesis title} 
+\end{indent-no-right-stop}
+
+\end{basiclist}
+
+
+%%%%%%%% FELLOWSHIPS AND AWARDS
+\section{\sc Fellowships  \newline and Awards}
+
+\begin{basiclist}
+
+\item Some Award, University of Somewhere \hfill {2019 -- 2021} 
+
+\item Some award for some poster, Some Conference Name \hfill {2019, 2020} 
+
+\begin{bullet-italic-right-stop}
+\item Poster: This is my poster title.
+\end{bullet-italic-right-stop}
+
+\item Some award for some paper, Some Conference Name \hfill {2018}
+
+\begin{bullet-italic-right-stop}
+\item Paper: This is my paper title.
+\end{bullet-italic-right-stop}
+
+\item Some Award, University of Somewhere \hfill {2017}
+
+\begin{bullet-italic-right-stop}
+\item Some information that is relevant to this award.
+\end{bullet-italic-right-stop}
+
+\item Some Award you got many times, University of Somewhere \hfill {Fall 2014, Fall 2015 -- Spring 2017} 
+
+\end{basiclist}
+
+
+%%%%%%%%%%%%% PAPERS
+\section{\sc Papers}
+
+\begin{list-papers}
+% perhaps bold your name
+\item Names. Year. Title. Pages. \href{https://arxiv.org/pdf/this-is-where-my-link-is}{\texttt{arXiv:insert-identifier}}.
+\end{list-papers}
+
+
+\section{\sc Travel Funding}
+\begin{basiclist}
+
+\item Name of Travel Award, Some Conference \hfill{June 2021}
+
+\end{basiclist}
+
+
+%%%%%%%%%%%%% EMPLOYEMENT
+\section{\sc Teaching Experience}
+
+\begin{basiclist}
+
+\item  \textbf{Teaching Assistant}, University of Somewhere \hfill{2019 -- Present}
+
+\begin{bullet-italic-right-stop}
+\item Tutorial Instructor for these courses.
+\item Marker for these courses.
+\end{bullet-italic-right-stop}
+
+\end{basiclist}
+
+
+%%%%%%%%%%%%% PROFESSIONAL EXPERIENCE
+\section{\sc Professional Experience}
+
+\begin{basiclist}
+
+\item \textbf{Name of Position}, Some Company \hfill{2015 -- 2019}
+
+\begin{bullet-italic-right-stop}
+\item Details about my job. 
+\end{bullet-italic-right-stop}
+
+\end{basiclist}
+
+
+%%%%%%%%%%%%% INVITED TALKS
+\section{\sc Invited Talks}
+
+\begin{list-talks}
+\item \textbf{Some Conference}  
+
+\begin{bullet-italic-no-right-stop}
+\item This is my conference title (City of Conference)\hfill{\textnormal{May 2021}}
+\end{bullet-italic-no-right-stop}
+
+\item \textbf{Some Conference I spoke multiple times at} 
+
+\begin{bullet-italic-no-right-stop}
+\item This is my conference title (City of Conference)\hfill{\textnormal{May 2021}}
+\item This is my conference title (City of Conference)\hfill{\textnormal{May 2021}}
+\end{bullet-italic-no-right-stop}
+
+\end{list-talks}
+
+
+%%%%%%%%%%%%% OTHER TALKS
+\section{\sc Talks}
+
+\begin{list-talks}
+
+\item \textbf{Some Conference}  
+
+\begin{bullet-italic-no-right-stop}
+\item This is my conference title (City of Conference)\hfill{\textnormal{May 2021}}
+\end{bullet-italic-no-right-stop}
+
+\end{list-talks}
+
+%%%%%%%%%%% END RESUME
+\end{resume}
+
+%%%%%%%%%%% NEW PAGE
+\newpage
+
+%%%%%%%%%%% HEADER INFORMATION
+\pagestyle{headings}
+\name{Firstname Lastname \vspace*{.1in}}
+
+%%%%%%%%%%% BEGIN RESUME
+\begin{resume}
+
+\section{\sc Talks Continued}
+\begin{list-talks}
+
+\item \textbf{Some Seminar}  
+
+\begin{bullet-italic-no-right-stop}
+\item This is my title (Location of Talk)\hfill{\textnormal{May 2021}}
+\end{bullet-italic-no-right-stop}
+
+\end{list-talks}
+
+
+%%%%%%%%%%%%%%%%%% CONFERENCES ATTENDED
+\section{\sc Conferences Attended}
+
+\begin{basiclist}
+
+\item Conference Number 1 (City of Conference) \hfill{July 2021}
+\item Conference Number 2 (City of Conference) \hfill{January 2021}
+\item Conference Number 3 (City of Conference) \hfill{October 2020}
+
+\end{basiclist}
+
+
+%%%%%%%%%%%%%%% SERVICE TO PROFESSION
+\section{\sc Service to Profession}
+\begin{basiclist}
+
+\item  \textbf{Referee}, Some Journal \hfill{ 2021}
+
+\begin{bullet-italic-right-stop}
+\item Number of submitted articles reviewed: 2.
+\end{bullet-italic-right-stop}
+
+\item \textbf{Journal Editor}, Some Journal \hfill{2017 -- Present}
+
+\begin{bullet-italic-right-stop}
+\item Information about your position.
+\end{bullet-italic-right-stop}
+
+\end{basiclist}
+
+
+%%%%%%%%%%%%%%% SERVICE TO UNIVERSITY
+\section{\sc Service to University}
+\begin{basiclist}
+
+\item \textbf{Committee Participation}, Some University
+
+\begin{bullet-italic-no-right-stop}
+\item Some committee you volunteered on. \hfill{\textnormal{March 2021}}
+\end{bullet-italic-no-right-stop}
+
+\end{basiclist}
+
+
+%%%%%%%%%%%%%%%% Other Work Experience
+\section{\sc Other Work Experience}
+
+\begin{basiclist}
+
+\item \textbf{Position}, Company \hfill {Sept 2018 -- January 2020} 
+
+\begin{bullet-italic-right-stop}
+\item Information about position.
+\end{bullet-italic-right-stop}
+
+\item \textbf{Position}, Company \hfill {June 2012 -- January 2020} 
+
+\end{basiclist}
+
+%%%%%%%%%%%%%%%% Other Volunteer Work
+\section{\sc Other\\ Volunteer\\ Work}
+\begin{basiclist}
+
+\item \textbf{Position}, Company \hfill {Sept 2018 -- January 2020} 
+
+\begin{bullet-italic-right-stop}
+\item Information about position.
+\end{bullet-italic-right-stop}
+
+\end{basiclist}
+
+%%%%%%%%%%% END RESUME
+\end{resume}
+
+\end{document}
+
+
+
+
+
+
+
+
+
+
+
+
+
